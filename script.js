@@ -173,7 +173,7 @@ if (typingText && heroTyping) {
     heroTyping.classList.remove('visible');
     setTimeout(() => {
         heroTyping.classList.add('visible');
-        const roles = ['DEVELOPER', 'DESIGNER'];
+        const roles = ['WEB DEVELOPER', 'GRAPHIC DESIGNER'];
         let roleIndex = 0;
         let i = 0;
         let isDeleting = false;
@@ -206,3 +206,83 @@ if (typingText && heroTyping) {
         typeLoop();
     }, 400);
 }
+
+// Particle background for hero section
+window.addEventListener('DOMContentLoaded', () => {
+    const particlesBg = document.querySelector('.particles-bg');
+    if (!particlesBg) return;
+    const numParticles = 28;
+    for (let i = 0; i < numParticles; i++) {
+        const dot = document.createElement('div');
+        dot.className = 'particle-dot';
+        // Random position
+        dot.style.left = Math.random() * 100 + '%';
+        dot.style.top = Math.random() * 100 + '%';
+        // Random animation duration and delay
+        dot.style.animationDuration = (10 + Math.random() * 6) + 's';
+        dot.style.animationDelay = (Math.random() * 12) + 's';
+        // Random size
+        const size = 6 + Math.random() * 10;
+        dot.style.width = size + 'px';
+        dot.style.height = size + 'px';
+        // Random color shade
+        if (Math.random() > 0.5) {
+            dot.style.background = 'rgba(225, 29, 72, 0.18)';
+        } else {
+            dot.style.background = 'rgba(255, 90, 95, 0.15)';
+        }
+        particlesBg.appendChild(dot);
+    }
+});
+
+// Modal Contact Form Logic
+function openContactModal() {
+  document.getElementById('contactModalOverlay').classList.add('active');
+  document.body.style.overflow = 'hidden';
+  setTimeout(() => {
+    const nameInput = document.getElementById('modal-name');
+    if (nameInput) nameInput.focus();
+  }, 200);
+}
+function closeContactModal() {
+  document.getElementById('contactModalOverlay').classList.remove('active');
+  document.body.style.overflow = '';
+}
+document.addEventListener('DOMContentLoaded', function() {
+  // Open modal
+  const openModalBtn = document.querySelector('.open-modal-btn');
+  if (openModalBtn) {
+    openModalBtn.addEventListener('click', openContactModal);
+  }
+  // Close modal (button)
+  const closeModalBtn = document.getElementById('closeModalBtn');
+  if (closeModalBtn) {
+    closeModalBtn.addEventListener('click', closeContactModal);
+  }
+  // Close modal (overlay click)
+  const modalOverlay = document.getElementById('contactModalOverlay');
+  if (modalOverlay) {
+    modalOverlay.addEventListener('click', function(e) {
+      if (e.target === modalOverlay) closeContactModal();
+    });
+  }
+  // Close modal (ESC key)
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && document.getElementById('contactModalOverlay').classList.contains('active')) {
+      closeContactModal();
+    }
+  });
+  // Modal form submit
+  const modalForm = document.querySelector('.modal-form');
+  if (modalForm) {
+    modalForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('modal-name').value;
+      const email = document.getElementById('modal-email').value;
+      const message = document.getElementById('modal-message').value;
+      const mailto = `mailto:jeruelestranero@gmail.com?subject=Portfolio Contact from ${encodeURIComponent(name)}&body=Name: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0A%0AMessage:%0A${encodeURIComponent(message)}`;
+      window.location.href = mailto;
+      closeContactModal();
+    });
+  }
+});

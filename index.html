@@ -22,7 +22,9 @@
                 <li class="nav-item">
                     <a href="#about" class="nav-link">About</a>
                 </li>
-               
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Services</a>
+                </li>
                 <li class="nav-item">
                     <a href="#contact" class="nav-link">Contact</a>
                 </li>
@@ -37,6 +39,7 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="particles-bg"></div>
         <div class="hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">
@@ -46,12 +49,22 @@
                     I'm a <span class="highlight-red typing-text"></span>
                 </h2>
                 <p class="hero-description">"Blending creative design with smart code to develop innovative digital experiences."</p>
-                
-            </div>
-            <div class="hero-image">
-                <div class="profile-pic-wrapper">
-                    <img src="profile.jpg" alt="Jeruel Mison" class="profile-pic" />
+                <div class="hero-social-links">
+                    <a href="https://www.facebook.com/jeruel.mison.3" class="hero-social-btn" target="_blank" rel="noopener" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/itsme_ewel?igsh=MW9hcDF6ZWh2Mnlnaw==" class="hero-social-btn" target="_blank" rel="noopener" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
                 </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <span class="hero-image-glass"></span>
+                <span class="hero-image-particle p1"></span>
+                <span class="hero-image-particle p2"></span>
+                <span class="hero-image-particle p3"></span>
+                <img src="boi.png" alt="Aesthetic Coder" class="hero-image-aesthetic" />
+                <div class="hero-image-reflection"></div>
             </div>
         </div>
     </section>
@@ -66,34 +79,112 @@
             <span class="bubble bubble5"></span>
         </div>
         <div class="container about-content-img">
-            <!-- <div class="about-profile-pic-col">
-                <div class="about-profile-pic-wrapper">
-                    <img src="profile2.jpg" alt="Jeruel Mison" class="about-profile-pic" />
+            <div class="about-profile-pic-col">
+                <div class="about-profile-pic-wrapper aesthetic-profile">
+                    <img src="profile5.jpg" alt="Jeruel Mison" class="about-profile-pic" />
                 </div>
-            </div> -->
+            </div>
             <div class="about-main-content">
                 <h2 class="section-title">About Me</h2>
                 <div class="about-content">
                     <div class="about-text">
-                        <p>Hello! I'm Jeruel, a dedicated BSCS student with a passion for programming and software development. I love exploring new technologies and building projects that solve real-world problems.</p>
+                        <p>I'm Jeruel Mison, a 4th year Student at Sacred Heart College, Lucena City, Inc., pursuing a Bachelor's degree in Computer Science. I have a strong background in software design, web development, and programming and am passionate about technology and ongoing improvement. As I get ready to enter the IT sector, I'm excited to put my skills to use and contribute to worthwhile projects since I value innovation, discipline, and teamwork.</p>
+                       
                     </div>
-                    <div class="skills">
-                        <h3>Skills</h3>
-                        <div class="skills-grid">
-                            <div class="skill-item">
-                                <i class="fas fa-code"></i>
-                                <span>Programming</span>
-                                <div class="skill-rating">
-                                    <div class="skill-bar" style="--skill-level: 75%"></div>
-                                </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section (NEW PAGE) -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="graphic-design-ratings">
+                    <div class="tool-rating">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Adobe Photoshop" class="tool-rating-icon" />
+                        <span class="tool-rating-label">Adobe Photoshop</span>
+                        <div class="tool-skill-bar">
+                            <div class="tool-skill-bar-fill" style="--skill-level: 80%"></div>
+                            <span class="tool-skill-bar-percent"></span>
+                        </div>
+                    </div>
+                    <div class="tool-rating">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva" class="tool-rating-icon" />
+                        <span class="tool-rating-label">Canva</span>
+                        <div class="tool-skill-bar">
+                            <div class="tool-skill-bar-fill" style="--skill-level: 75%"></div>
+                            <span class="tool-skill-bar-percent"></span>
+                        </div>
+                    </div>
+                    <div class="tool-rating">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="tool-rating-icon" />
+                        <span class="tool-rating-label">Figma</span>
+                        <div class="tool-skill-bar">
+                            <div class="tool-skill-bar-fill" style="--skill-level: 40%"></div>
+                            <span class="tool-skill-bar-percent"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card graphic-design-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="service-title">Graphic Design</h3>
+                    <p class="service-desc">Creative and modern designs for branding, social media, and digital content. I turn ideas into eye-catching visuals that communicate your message effectively.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="service-title">Web Developer</h3>
+                    <p class="service-desc">Building responsive and interactive websites using the latest technologies. I focus on clean code, user experience, and performance for every project.</p>
+                </div>
+                <div class="webdev-ratings">
+                    <div class="tool-rating tool-rating-group">
+                        <div class="tool-rating-label">HTML | CSS | JS</div>
+                        <div class="tool-skill-bar-group">
+                            <div class="tool-skill-bar tool-skill-bar-inline">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="tool-rating-icon" />
+                                <div class="tool-skill-bar-fill" style="--skill-level: 80%"></div>
+                                
                             </div>
-                            <div class="skill-item">
-                                <i class="fas fa-paint-brush"></i>
-                                <span>Designing</span>
-                                <div class="skill-rating">
-                                    <div class="skill-bar" style="--skill-level: 80%"></div>
-                                </div>
+                            <div class="tool-skill-bar tool-skill-bar-inline">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="tool-rating-icon" />
+                                <div class="tool-skill-bar-fill" style="--skill-level: 75%"></div>
+                                
                             </div>
+                            <div class="tool-skill-bar tool-skill-bar-inline">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tool-rating-icon" />
+                                <div class="tool-skill-bar-fill" style="--skill-level: 70%"></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tool-rating">
+                        <img src="laravel.png" alt="Laravel" class="tool-rating-icon" />
+                        <span class="tool-rating-label">Laravel</span>
+                        <div class="tool-skill-bar">
+                            <div class="tool-skill-bar-fill" style="--skill-level: 65%"></div>
+                            <span class="tool-skill-bar-percent">75%</span>
+                        </div>
+                    </div>
+                    <div class="tool-rating">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tool-rating-icon" />
+                        <span class="tool-rating-label">React</span>
+                        <div class="tool-skill-bar">
+                            <div class="tool-skill-bar-fill" style="--skill-level: 60%"></div>
+                            <span class="tool-skill-bar-percent">60%</span>
+                        </div>
+                    </div>
+                    <div class="tool-rating">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tool-rating-icon" />
+                        <span class="tool-rating-label">Python</span>
+                        <div class="tool-skill-bar">
+                            <div class="tool-skill-bar-fill" style="--skill-level: 55%"></div>
+                            <span class="tool-skill-bar-percent">65%</span>
                         </div>
                     </div>
                 </div>
@@ -101,68 +192,7 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <!-- <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-calculator"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Calculator App</h3>
-                        <p>A fully functional calculator built with Java Swing. Features basic arithmetic operations, memory functions, and a clean user interface.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">Swing</span>
-                        </div>
-                        <a href="#" class="project-link">
-                            <i class="fab fa-github"></i>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-tasks"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Task Manager</h3>
-                        <p>A web-based task management application with CRUD operations, user authentication, and responsive design.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <a href="#" class="project-link">
-                            <i class="fab fa-github"></i>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-gamepad"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Snake Game</h3>
-                        <p>A classic Snake game implementation using Java. Features score tracking, increasing difficulty, and smooth gameplay.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">Graphics2D</span>
-                        </div>
-                        <a href="#" class="project-link">
-                            <i class="fab fa-github"></i>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
+   
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
@@ -202,12 +232,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Jeruel Mison. All rights reserved.</p>
-        </div>
-    </footer>
+  
 
     <script src="script.js"></script>
 </body>
